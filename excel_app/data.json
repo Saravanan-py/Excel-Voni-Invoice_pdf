@@ -1,0 +1,13 @@
+[
+  {
+    'name': 'vivya corp',
+    'address': '123 street, califirnia',
+    'email_id': 'abc@gmail.com',
+    'phone': 1234567890,
+    'id': 1,
+    'description': 'EC4M',
+    'mrp': 1400,
+    'discount': 50,
+    'quantity': 1
+  }
+]
