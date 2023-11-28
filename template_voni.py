@@ -63,7 +63,6 @@ def generate_pdf(data):
     sheet = workbook.active
     locale.setlocale(locale.LC_ALL, 'en_IN')
 
-    sheet.insert_rows(12,14)
     sheet['A4'] = f'{data["Client_name"]},\n{data["Client_Address"]}'
     sheet['G4'] = f'{data["Quote_No"]}'
     sheet['G5'] = f'{data["Q_Date"]}'
@@ -86,11 +85,11 @@ def generate_pdf(data):
 
     # Save the file
     workbook.save(filename='client.xlsx')
-
-    # Open the workbook and export as PDF
-    sheets = excel.Workbooks.Open(r'C:\Users\Vrdella\Desktop\django_projects\excel_projects\excel_project1\client.xlsx')
-    work_sheets = sheets.Worksheets[0]
-    work_sheets.ExportAsFixedFormat(0, r"C:\Users\Vrdella\Desktop\django_projects\excel_projects\excel_project1\client.pdf")
+    #
+    # # Open the workbook and export as PDF
+    # sheets = excel.Workbooks.Open(r'C:\Users\Vrdella\Desktop\django_projects\excel_projects\excel_project1\client.xlsx')
+    # work_sheets = sheets.Worksheets[0]
+    # work_sheets.ExportAsFixedFormat(0, r"C:\Users\Vrdella\Desktop\django_projects\excel_projects\excel_project1\client.pdf")
 
 # Generate PDF using the example data
 generate_pdf(data)
